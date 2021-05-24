@@ -5,7 +5,7 @@ const refs = {
 
 const onInputEntering = event => {
     refs.nameLable.textContent =
-        event.currentTarget.value === ''
+        event.currentTarget.value.trim() === ''
             ? 'незнакомец'
             : event.currentTarget.value;
 };
